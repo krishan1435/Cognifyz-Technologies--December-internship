@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="stylesl2.css"> 
+	<title>Landing Page</title> 
+</head> 
+
+<body> 
+	<nav> 
+		<div class="heading">Cognifyz</div> 
+		<span class="sideMenuButton"
+			onclick="openNavbar()"> 
+			☰ 
+		</span> 
+
+		<div class="navbar"> 
+			<ul> 
+				<li><a href="#Home">Home</a></li> 
+				<li><a href="#">About</a></li> 
+				<li><a href="#">Sign Up</a></li> 
+			</ul> 
+		</div> 
+	</nav> 
+
+	<!-- Side navigation bar for 
+		responsive website -->
+	<div class="sideNavigationBar"
+		id="sideNavigationBar"> 
+		<a href="#" class="closeButton"
+			onclick="closeNavbar()"> 
+			 
+		</a> 
+		<a href="#">Home</a> 
+		<a href="#">About</a> 
+		<a href="#">Sign Up</a> 
+	</div> 
+
+	<!-- Content -->
+	<div class="line" id="Home"> 
+		<div class="side1"> 
+			<h1 style="font-size: 35px;">Web Development Internship</h1> 
+			<button> 
+				<a href= 
+"https://www.Cognifyz.org/"> 
+					Explore More 
+				</a> 
+			</button> 
+		</div> 
+		<div class="side2"> 
+			<img src= 
+"data:image/png;base64,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"
+				width="500" alt="">
+		</div> 
+	</div> 
+
+	<section class="about" id="My Projects"> 
+		<div class="content"> 
+			<div class="title"> 
+				<span>Internship We Offer</span> 
+			</div> 
+			<div class="boxes"> 
+				<div class="box"> 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							Web Development
+						</a> 
+					</div> 
+					<p> 
+						Web development is the process of creating and maintaining websites or web applications for the internet. It encompasses a wide range of tasks, from building simple static web pages to developing complex dynamic web applications with advanced functionality. 
+					</p> 
+				</div> 
+				<div class="box"> 
+
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							Java Development
+						</a> 
+					</div> 
+					<p> 
+						Java is a popular, high-level programming language known for its platform independence, robustness, and versatility. It's widely used for developing a wide range of applications, from web and mobile applications to enterprise software and embedded systems. Here are some key aspects of Java development: 
+					</p> 
+				</div> 
+
+				<div class="box"> 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							DevOps
+						</a> 
+					</div> 
+					<p> 
+						DevOps, short for "Development" and "Operations," is a set of practices, principles, and cultural philosophies that aim to improve collaboration and communication between software development (Dev) and IT operations (Ops) teams. 
+					</p> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<section class="contact" id="contact"> 
+		<div class="content"> 
+			<div class="title"><span>Sign Up</span></div> 
+			<div class="contactMenu"> 
+				<div class="input1"> 
+					<div class="label1">Your Name</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Name here"> 
+					</div> 
+					<div class="label1"> 
+						<label>Your Email</label> 
+					</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Email here"> 
+					</div> 
+					<div class="label1"> 
+						<label>Your Password</label> 
+					</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Password here"> 
+					</div> 
+					<div class="button"> 
+						<button>Sign Up</button> 
+					</div> 
+				</div> 
+				<div class="input3"> 
+					<div class="rightside1"> 
+						<div class="title1"> 
+							<span> 
+								Contact Us 
+							</span> 
+						</div> 
+						<div class="content1"> 
+							A-143, 9th Floor, Sovereign 
+							Corporate Tower, Sector-136, 
+							Noida, Uttar Pradesh - 201305 
+						</div> 
+						<div class="title1"> 
+							<span>More Information</span> 
+						</div> 
+						<div class="content1"> 
+							Greetings to all the Cognifyz out there! 
+							We welcome you to the platform where we 
+							consistently strive to offer the best 
+							of education. This platform has been 
+							designed for every geek wishing to 
+							expand their knowledge, share their 
+							knowledge and is ready to grab their 
+							dream job. We have millions of articles, 
+							live as well as online courses, thousands 
+							of tutorials and much more just for the 
+							geek inside you.Thank you for choosing 
+							and supporting us! 
+						</div> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+	<!-- Footer section -->
+	<footer> 
+		<div class="footer"> 
+			<span> 
+				Created By 
+				<a href="https://www.Cognifyz.org/"
+					target="_blank"> 
+					Cognifyz
+				</a> 
+			</span> 
+		</div> 
+	</footer> 
+	<script>
+        function openNavbar() { 
+	document.getElementById("sideNavigationBar") 
+		.style.width = "50%"; 
+} 
+function closeNavbar() { 
+	document.getElementById("sideNavigationBar") 
+		.style.width = "0%"; 
+}
+
+
+
+    </script> 
+</body> 
+
+</html>
